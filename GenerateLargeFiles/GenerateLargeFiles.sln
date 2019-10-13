@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29319.158
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenerateLargeFiles", "GenerateLargeFiles\GenerateLargeFiles.csproj", "{E5FA4DE2-1CE2-45FB-8A21-9B4597A2F211}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateLargeFiles.Test", "GenerateLargeFiles.Test\GenerateLargeFiles.Test.csproj", "{E175E342-708B-41F9-A945-FF73B5F8EC38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5FA4DE2-1CE2-45FB-8A21-9B4597A2F211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5FA4DE2-1CE2-45FB-8A21-9B4597A2F211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5FA4DE2-1CE2-45FB-8A21-9B4597A2F211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5FA4DE2-1CE2-45FB-8A21-9B4597A2F211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E175E342-708B-41F9-A945-FF73B5F8EC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E175E342-708B-41F9-A945-FF73B5F8EC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E175E342-708B-41F9-A945-FF73B5F8EC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E175E342-708B-41F9-A945-FF73B5F8EC38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AD7EF08-FFED-4A71-BDD4-860B52AF04CA}
+	EndGlobalSection
+EndGlobal
