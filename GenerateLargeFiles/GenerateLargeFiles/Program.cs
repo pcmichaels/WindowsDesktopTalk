@@ -13,7 +13,7 @@ namespace GenerateLargeFiles
         {
             List<MainData> mainData = new List<MainData>();
 
-            for (int i = 1; i <= 10000; i++)
+            for (int i = 1; i <= 50000; i++)
             {
                 mainData.Add(GenerateData());
             }
@@ -32,7 +32,7 @@ namespace GenerateLargeFiles
 
         static MainData GenerateData()
         {
-            int rnd = _rnd.Next(3);
+            int rnd = _rnd.Next(4);
 
             var data = rnd switch
             {
@@ -56,6 +56,13 @@ namespace GenerateLargeFiles
                     PropertyTwo = $"Your heart's been aching but you're too shy to say it",
                     PropertyThree = $"Inside we both know what's been going on",
                     SubDataProperty = GenerateSubData(rnd, "Rick Astley, Never Gonna Give You Up")
+                },
+                3 => new MainData()
+                {
+                    PropertyOne = $"There must be some kind of way outta here",
+                    PropertyTwo = $"Said the joker to the thief",
+                    PropertyThree = $"There's too much confusion",
+                    SubDataProperty = GenerateSubData(rnd, "Bob Dylan, All Along The Watchtower")
                 }
             };
 
