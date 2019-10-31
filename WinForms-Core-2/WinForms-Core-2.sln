@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29319.158
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms-Core-2", "WinForms-Core-2\WinForms-Core-2.csproj", "{A66078B9-01BA-4E1E-ABA3-D37C16E19605}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-WinForms-Core-2", "WinForms-Core-2\1-WinForms-Core-2.csproj", "{A66078B9-01BA-4E1E-ABA3-D37C16E19605}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms-Core-Upgrade", "WInForms-Core-Upgrade\WinForms-Core-Upgrade.csproj", "{961BDD02-0C43-432F-B616-BBB4A8F1A1B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-WinForms-Core-Upgrade", "WInForms-Core-Upgrade\2-WinForms-Core-Upgrade.csproj", "{961BDD02-0C43-432F-B616-BBB4A8F1A1B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-WinForms-Core-Deploy", "WinForms-Core-Deploy\3-WinForms-Core-Deploy.csproj", "{6CD07E33-33FA-4067-9D78-535D1B3658B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{961BDD02-0C43-432F-B616-BBB4A8F1A1B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{961BDD02-0C43-432F-B616-BBB4A8F1A1B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{961BDD02-0C43-432F-B616-BBB4A8F1A1B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD07E33-33FA-4067-9D78-535D1B3658B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD07E33-33FA-4067-9D78-535D1B3658B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD07E33-33FA-4067-9D78-535D1B3658B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD07E33-33FA-4067-9D78-535D1B3658B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
