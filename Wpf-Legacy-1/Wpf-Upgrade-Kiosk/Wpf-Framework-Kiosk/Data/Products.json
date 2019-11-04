@@ -1,0 +1,25 @@
+﻿{
+  "Product": [
+    {
+      "ProductCode": "00001",
+      "UnitPrice": "12.12",
+      "Description": "Bubble For Spirit Level"
+    },
+    {
+      "ProductCode": "00002",
+      "UnitPrice": "5.01",
+      "Description": "Left Handed Hammer"
+    },
+    {
+      "ProductCode": "00003",
+      "UnitPrice": "1.2",
+      "Description": "Long Stand"
+    },
+    {
+      "ProductCode": "00004",
+      "UnitPrice": "21.32",
+      "Description": "Masking Tape"
+    }
+
+  ]
+}
