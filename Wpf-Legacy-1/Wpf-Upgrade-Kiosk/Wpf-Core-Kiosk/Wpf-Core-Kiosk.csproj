@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>Wpf_Core_Kiosk</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--Regular Settings-->
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Wpf-Framework-Kiosk\Helpers\**">
+      <Link>Helpers\%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\Wpf-Framework-Kiosk\Models\**">
+      <Link>Models\%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\Wpf-Framework-Kiosk\ViewModels\**">
+      <Link>ViewModels\%(Filename)%(Extension)</Link>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\Wpf-Framework-Kiosk\Data\**">
+      <Link>Data\%(Filename)%(Extension)</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="..\Wpf-Framework-Kiosk\App.xaml" Link="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Compile Include="..\Wpf-Framework-Kiosk\App.Xaml.cs" Link="App.Xaml.cs" />
+    <Page Include="..\Wpf-Framework-Kiosk\MainPage.xaml" Link="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="..\Wpf-Framework-Kiosk\MainPage.Xaml.cs" Link="MainPage.Xaml.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.2</Version>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
