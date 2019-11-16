@@ -1,0 +1,26 @@
+﻿<Window xmlns:XamlHost="clr-namespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Wpf-Host-Uwp-Control"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        xmlns:XamlHost1="clr-namespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Microsoft.Toolkit.Wpf.UI.XamlHost"  x:Class="Wpf_Host_Uwp_Control.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <XamlHost1:WindowsXamlHost Grid.Row="0"
+                                   HorizontalAlignment="Left" Height="100" Margin="159,109,0,0" VerticalAlignment="Top" Width="100"
+                                   InitialTypeName="Windows.UI.Xaml.Controls.Button"
+                                   ChildChanged="WindowsXamlHost_ChildChanged"/>
+
+        <XamlHost1:WindowsXamlHost Grid.Row="1"
+                                   HorizontalAlignment="Left" Height="100" Margin="159,109,0,0" VerticalAlignment="Top" Width="100"
+                                   InitialTypeName="UWP_Controls_Library.FunkyButton"
+                                   ChildChanged="WindowsXamlHost_ChildChanged"/>
+
+    </Grid>
+</Window>
