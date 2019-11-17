@@ -154,12 +154,6 @@
       <Version>6.2.9</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UWP-Controls-Library\UWP-Controls-Library.csproj">
-      <Project>{57eb0e26-6ea4-4e4b-b88c-9a2106002189}</Project>
-      <Name>UWP-Controls-Library</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
