@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>Wpf_Host_Uwp_Control</RootNamespace>
     <UseWPF>true</UseWPF>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -13,16 +13,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UWP-Controls-Library\UWP-Controls-Library.csproj" />
+    <ProjectReference Include="..\UWP-Custom-Xaml-App\UWP-Custom-Xaml-App.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
     <AssetTargetFallback>uap10.0.18362</AssetTargetFallback>
-    <TargetPlatformMinVersion>10.0.17134</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>uap10.0.18362</TargetPlatformMinVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
 </Project>
